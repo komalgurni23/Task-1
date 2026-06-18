@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Image Gallery</title>
+<link rel="stylesheet" href="image.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+<!-- Filter Buttons -->
+<div class="filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="animals">Animals</button>
+</div>
+
+<!-- Gallery -->
+<div class="gallery">
+
+    <div class="gallery-item nature">
+        <img src="https://picsum.photos/id/10/600/400" alt="">
+    </div>
+
+    <div class="gallery-item city">
+        <img src="https://picsum.photos/id/1011/600/400" alt="">
+    </div>
+
+    <div class="gallery-item animals">
+        <img src="https://picsum.photos/id/1025/600/400" alt="">
+    </div>
+
+    <div class="gallery-item nature">
+        <img src="https://picsum.photos/id/1040/600/400" alt="">
+    </div>
+
+    <div class="gallery-item city">
+        <img src="https://picsum.photos/id/1060/600/400" alt="">
+    </div>
+
+    <div class="gallery-item animals">
+        <img src="https://picsum.photos/id/1074/600/400" alt="">
+    </div>
+
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+
+    <span class="close">&times;</span>
+
+    <button class="prev">&#10094;</button>
+
+    <img id="lightbox-img" src="" alt="">
+
+    <button class="next">&#10095;</button>
+
+</div>
+
+<script src="image.js"></script>
+</body>
+</html>
